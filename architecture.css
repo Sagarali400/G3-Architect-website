@@ -50,25 +50,66 @@ nav li a{
     font-size: 3.5rem;
     font-weight: 700;
     color: #131313;
-}.banner-describtion{
+}.banner-description{
     color: #726272;
 }
 .banner img{
     margin-top: 30px;
     width: 100%;
 }
+.teams-container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.teams-img-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.teams-title{
+    font-size:2.8rem ;
+}
+.teams-title .Quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-title .text-features{
+    color: #ff900e;
+    font-weight: 700;
+}
+
+
+
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 
 @media screen and (max-width:576px){
-    nav {
+    nav,.teams-container {
        flex-direction: column;
     }
     header{
         padding: 20px;
     }
+    .teams-content{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
 }
 @media screen and (min-width:576px) and (max-width:960px){
-    nav{
+    nav, .teams-container{
         flex-direction: column;
     }
 }
